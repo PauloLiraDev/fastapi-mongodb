@@ -1,6 +1,6 @@
 # FastAPI com MongoDB
 
-Este é um projeto de API simples utilizando **FastAPI** e **MongoDB** com o **Motor**, que é o driver assíncrono do MongoDB para Python. A API permite realizar operações básicas de CRUD, como cadastrar e listar itens em um banco de dados MongoDB.
+Este é um projeto de API simples utilizando **FastAPI** e **MongoDB** com o **Motor**, que é o driver assíncrono do MongoDB para Python. A API permite realizar operações básicas de CRUD, como cadastrar e listar pessoas em um banco de dados MongoDB.
 
 ## Tecnologias Utilizadas
 
