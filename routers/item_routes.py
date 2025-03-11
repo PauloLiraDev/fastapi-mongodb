@@ -39,7 +39,6 @@ async def listar_pessoas(request: Request, item: Pessoa):
     try:
         item_dict = item.model_dump()
         item_dict['_id'] = {"$toString": "$_id"}
-        # Busca todos os registros na coleção 'user'
         pipeline = [
             {
                 "$project": item_dict

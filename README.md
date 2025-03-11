@@ -11,9 +11,41 @@ Este é um projeto de API simples utilizando **FastAPI** e **MongoDB** com o **M
 
 ## Instalação
 
+Certifique-se de que tenha o Python 3.7+ instalado.
+
 ### 1. Clone o repositório
 
 Clone o repositório para sua máquina local.
 
+
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+git clone https://github.com/PauloLiraDev/fastapi-mongodb
+```
+
+
+### 2. Crie e ative um ambiente virtual (opcional, mas recomendado):
+```
+python -m venv venv
+source venv/bin/activate  # No Linux/Mac
+venv\Scripts\activate  # No Windows
+```
+
+
+### 3. Instale as dependências do projeto:
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Renomeie o arquivo .env_template para .env e defina as variáveis para se conectar ao MongoDB.
+```
+DEBUG_MODE=True
+DB_NAME=seu_banco
+DB_URL=mongodb+srv://<seu_usuario>:<sua_senha>@<nome_do_cluster>.nbtnt.mongodb.net/?retryWrites=true&w=majority&appName=<nome_do_cluster>
+```
+Veja o código [aqui](main.py).
+
+### 5. Execute o arquivo    ```main.py``` ou inicialize o servidor localmente com o comando:
+```
+uvicorn main:app --reload
+```
+
