@@ -37,12 +37,14 @@ pip install -r requirements.txt
 ```
 
 ### 4. Renomeie o arquivo .env_template para .env e defina as variáveis para se conectar ao MongoDB.
+
+Veja o arquivo [aqui](.env_template).
+
 ```
 DEBUG_MODE=True
 DB_NAME=seu_banco
 DB_URL=mongodb+srv://<seu_usuario>:<sua_senha>@<nome_do_cluster>.nbtnt.mongodb.net/?retryWrites=true&w=majority&appName=<nome_do_cluster>
 ```
-Veja o código [aqui](main.py).
 
 ### 5. Execute o arquivo    ```main.py``` ou inicialize o servidor localmente com o comando:
 ```
